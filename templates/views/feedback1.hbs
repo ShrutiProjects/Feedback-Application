@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+  {{>headerlinks}}
+ </head>
+ <body>
+  
+    <div class="container-fluid main_menu">
+           <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+                <nav class="navbar navbar-expand-lg ">
+                    <a class="navbar-brand" href="#"><i class="far fa-snowflake"></i>Online Feedback System</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/Login">Login</a>
+                        </li>
+                           <li class="nav-item">
+                            <a class="nav-link" href="/feedback">Feedback</a>
+                          </li>
+                      
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/logout">Logout</a>
+                          </li>
+                      </ul>
+                     
+                    </div>
+                  </nav>
+            </div>
+
+        </div>
+</div>
+{{!-- header  --}}
+ <div class="container-fluid main_header">
+    <div class="row">
+      <div class="col-md-10 col-12 mx-auto">
+        <div class="row">
+            <div class="col-md-6 col-12 main_header_left algin-items-center">
+       
+       <br>
+       <br><br>
+       <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>
+        <h1>Course Evaluation Form</h1>     
+<form action="/feedback1" method="POST">
+  <ul>
+  <li>
+  <p>The course as a whole was:</p></li>
+<div class="form-check">
+  <input type="radio" name="mcq1" value="Excellent"id="flexRadioDefault1">
+  <label class="form-check-label">
+    Excellent
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq1" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+ Very Good
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq1" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+   Good
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq1" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Fair
+  </label>
+</div>
+ <div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq1" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Poor
+  </label>
+</div>
+ <li>
+  <p>The course content was:</p></li>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq2" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Excellent
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq2" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+ Very Good
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq2" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+   Good
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq2" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Fair
+  </label>
+</div>
+ <div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq2" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Poor
+  </label>
+</div>
+ <li>
+  <p>The instructor's contribution to the course was:</p></li>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq3" id="flexRadioDefault2">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Excellent
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq3" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+ Very Good
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq3" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+   Good
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq3" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Fair
+  </label>
+</div>
+ <div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq3" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Poor
+  </label>
+</div>
+ <li>
+  <p>The instructor's effectiveness in teaching the subject matter was:</p></li>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq4" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Excellent
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq4" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+ Very Good
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq4" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+   Good
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq4" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Fair
+  </label>
+</div>
+ <div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq4" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Poor
+  </label>
+</div>
+ <li>
+  <p>Explanations by instructor were:</p></li>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq5" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Excellent
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq5" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+ Very Good
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq5" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+   Good
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq5" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Fair
+  </label>
+</div>
+ <div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq5" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+mcq6</div>
+ <li>
+  <p>Instructor's use of examples and illustrations was:</p></li>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq6" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Excellent
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq6" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+ Very Good
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq6" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+   Good
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq6" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Fair
+  </label>
+</div>
+ <div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq6" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Poor
+  </label>
+</div>
+ <li>
+  <p>Encouragement givin students to express themselves was:</p></li>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq7" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Excellent
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq7" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+ Very Good
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq7" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+   Good
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq7" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Fair
+  </label>
+</div>
+ <div class="form-check">
+  <input class="form-check-input" type="radio" name="mcq7" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Poor
+  </label>
+</div>
+</ul>
+ <input type="submit" class="btnRegister"  value="Submit"/>
+</form>
+</div>    <!-- Optional JavaScript; choose one of the two! -->
+</div>
+   
+
+            </body>
+            </html>
